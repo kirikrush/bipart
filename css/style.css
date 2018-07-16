@@ -501,6 +501,7 @@ input:-moz-placeholder {
 .crypto {
     background-image: url(../images/topbg.png);
     position: relative;
+    padding-bottom:50px;
 }
 
 .crypto .heading {
