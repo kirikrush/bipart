@@ -41,7 +41,7 @@
                 </div>
                 <div class="col-3 ml-auto">
                     <button class="callback ml-auto">
-                        <span class="callback-text">Начать обучение</span>
+                        <span class="callback-text arrow">Начать обучение</span>
                     </button>
                 </div>
             </div>
@@ -54,12 +54,13 @@
                     <h1 class="top__head">Авторская программа</h1>
                     <h1 class="top__head-big">обучения трейдингу</h1>
                     <h1 class="top__head-subhead">бесплатное обучение после регистрации</h1>
-                    <p class="top__paragraph">Вы только планируете начать? Мы поможем вам стать эффективным специалистом способным получать прибыль
-                        в любой точке земного шара.</p>
+                    <p class="top__paragraph">Вы только планируете начать? Мы поможем вам стать эффективным специалистом способным получать
+                        <br> прибыль в любой точке земного шара.</p>
                     <button class="callback yellow">
                         <span class="callback-text">Зарегистрироваться</span>
                     </button>
-                    <p class="top__paragraph lock">нажмите на кнопку и получите доступ ко всем учебным материалам.</p>
+                    <p class="top__paragraph lock">нажмите на кнопку и получите
+                        <br> доступ ко всем учебным материалам.</p>
                 </div>
                 <div class="col-6">
                     <img src="images/topbitcoin.png" alt="" class="top__bitcoin">
@@ -71,23 +72,40 @@
         <div class="container">
             <div class="row form__row">
                 <div class="col-5 offset-1 form-text">
-                    <h1 class="heading">Начните торговлю с наставкником</h1>
-                    <p class="paragraph">Зарегистрируйтесь сейчас и под руководством наставника, получите прибыль с первых дней обучения.</p>
+                    <h1 class="heading">Начните торговлю
+                        <br>с наставкником</h1>
+                    <p class="paragraph">Зарегистрируйтесь сейчас и под руководством
+                        <br> наставника, получите прибыль с первых дней.</p>
 
                     <div class="buttons ">
-                        <button class="blue activet">1 ШАГ</button>
+                        <button class="blue activet step1">
+                            <span>
+                                <span class="bignum">1 </span> шаг</span>
+                        </button>
 
 
-                        <button class="blue non-activet">2 ШАГ</button>
+                        <button class="blue non-activet step2">
+                            <span>
+                                <span class="bignum">2 </span> шаг</span>
+                        </button>
                     </div>
+                    <input type="checkbox" id="check" class="d-none">
+                    <label for="check"><div class="check"></div>
+                    <p class="paragraph accept">Я согласен на передачу и обработку<br>
+                        своих <a href="">персональных данных</a></p></label>
 
                 </div>
                 <div class="col-4 form offset-1">
                     <form action="#" class="post">
-                        <input type="text" placeholder="Ваше имя">
-                        <input type="tel" placeholder="Ваш телефон">
-                        <input type="e-mail" placeholder="Ваш e-mail">
-                        <button class="callback yellow" type="submit">Продолжить</button>
+                        <input type="text" class="first"  id="name1"class="first" placeholder="Ваше имя">
+                        <input type="tel"  class="first" id="tel1" placeholder="Ваш телефон">
+                        <input type="e-mail"  class="first" id="mail1" placeholder="Ваш e-mail">
+                        <button class="callback yellow first"   class="first" type="submited">Продолжить</button>
+
+                        <input type="text"  class="second" placeholder="Ваше еще что-то">
+                        <input type="tel"  class="second" placeholder="Ваш еще какой-то">
+                        <input type="e-mail" class="second"  placeholder="Что-то еще">
+                        <button class="callback yellow second" type="submit">Продолжить</button>
                     </form>
                 </div>
             </div>
@@ -144,7 +162,7 @@
                         являются успешные сделки опытного трейдера.</p>
                     <div class="wrapper">
                         <button class="callback yellow">Зарегистрироваться</button>
-                        <a href="" class="get_access">получить доступ к сигналам</a>
+                        <a href="" class="get_access">Получить доступ к сигналам</a>
                     </div>
                 </div>
             </div>
@@ -194,11 +212,11 @@
                 </div>
                 <div class="col-7">
                     <img src="images/screen.png" alt="" class="screen">
-                    <div class="platform-round d-flex justify-content-center align-items-center" id="express">+</div>
-                    <div class="platform-round d-flex justify-content-center align-items-center active" id="programm">+</div>
-                    <div class="platform-round d-flex justify-content-center align-items-center" id="homework">+</div>
-                    <div class="platform-round d-flex justify-content-center align-items-center" id="chat">+</div>
-                    <div class="platform-round d-flex justify-content-center align-items-center" id="sertificate">+</div>
+                    <div class="platform-round d-flex justify-content-center  " id="express">+</div>
+                    <div class="platform-round d-flex justify-content-center   active" id="programm">+</div>
+                    <div class="platform-round d-flex justify-content-center  " id="homework">+</div>
+                    <div class="platform-round d-flex justify-content-center  " id="chat">+</div>
+                    <div class="platform-round d-flex justify-content-center  " id="sertificate">+</div>
                 </div>
                 <div class="col-5 d-flex align-items-center descs">
                     <div class="descriptions__container">
@@ -208,22 +226,22 @@
                                 Наш экспресс-курс сопровождают практические домашние задания, которые проверяются лично нашими компетентными наставниками.
                             </p>
                         </div>
-                        <div class="description d-none sertificate">
+                        <div class="description disactiv sertificate">
                             <h1 class="description-subhead">Сертифиат о прохождении курса</h1>
                             <p class="paragraph"> Наш экспресс-курс сопровождают практические домашние задания, которые проверяются лично нашими
                                 компетентными наставниками.</p>
                         </div>
-                        <div class="description d-none homework">
+                        <div class="description disactiv homework">
                             <h1 class="description-subhead">Домашние задания</h1>
                             <p class="paragraph"> Наш экспресс-курс сопровождают практические домашние задания, которые проверяются лично нашими
                                 компетентными наставниками.</p>
                         </div>
-                        <div class="description d-none chat">
+                        <div class="description disactiv chat">
                             <h1 class="description-subhead">Чат с преподавателем</h1>
                             <p class="paragraph"> Наш экспресс-курс сопровождают практические домашние задания, которые проверяются лично нашими
                                 компетентными наставниками.</p>
                         </div>
-                        <div class="description d-none express">
+                        <div class="description disactiv express">
                             <h1 class="description-subhead">Экспресс обучение трейдингу</h1>
                             <p class="paragraph"> Наш экспресс-курс сопровождают практические домашние задания, которые проверяются лично нашими
                                 компетентными наставниками.</p>
@@ -234,9 +252,9 @@
         </div>
     </section>
     <section class="crypto">
-        <img src="images/crypto.png" alt="" class="bitcoin blured" id="b1">
-        <img src="images/crypto.png" alt="" class="bitcoin" id="b2">
-        <img src="images/crypto.png" alt="" class="bitcoin blured" id="b3">
+        <img src="images/crypto.png" alt="" class="bitcoin blured rellax" data-rellax-speed="1" data-rellax-percentage="0.5" id="b1">
+        <img src="images/crypto.png" alt="" class="bitcoin rellax" id="b2" data-rellax-speed="2" data-rellax-percentage="0.5">
+        <img src="images/crypto.png" alt="" class="bitcoin blured rellax" data-rellax-speed="3" id="b3" data-rellax-percentage="0.5">
         <div class="container">
             <div class="row row__crypto">
                 <div class="col-2">
@@ -247,7 +265,7 @@
                     <h1 class="heading blued">прямо сейчас</h1>
                     <p class="top__paragraph">Наша цель заключается в том, чтобы все наши студенты начали зарабатывать еще в ходе обучения</p>
                 </div>
-                <div class="col-3 text-center d-flex flex-column align-items-center justify-content-start">
+                <div class="col-4 text-center d-flex flex-column align-items-center justify-content-start enter">
                     <button class="yellow callback">Зарегистрироваться</button>
                     <a href="" class="get_access white">Войти в личный кабинет</a>
                 </div>
@@ -401,23 +419,40 @@
         <div class="container">
             <div class="row form__row">
                 <div class="col-5 offset-1 form-text">
-                    <h1 class="heading">Начните торговлю с наставкником</h1>
-                    <p class="paragraph">Зарегистрируйтесь сейчас и под руководством наставника, получите прибыль с первых дней обучения.</p>
+                    <h1 class="heading">Начните торговлю
+                        <br>с наставкником</h1>
+                    <p class="paragraph">Зарегистрируйтесь сейчас и под руководством
+                        <br> наставника, получите прибыль с первых дней.</p>
 
                     <div class="buttons ">
-                        <button class="blue activet">1 ШАГ</button>
+                        <button class="blue activet step1">
+                            <span>
+                                <span class="bignum">1 </span> шаг</span>
+                        </button>
 
 
-                        <button class="blue non-activet">2 ШАГ</button>
+                        <button class="blue non-activet step2">
+                            <span>
+                                <span class="bignum">2 </span> шаг</span>
+                        </button>
                     </div>
+                    <input type="checkbox" id="check" class="d-none">
+                    <label for="check"><div class="check"></div>
+                    <p class="paragraph accept">Я согласен на передачу и обработку<br>
+                        своих <a href="">персональных данных</a></p></label>
 
                 </div>
                 <div class="col-4 form offset-1">
                     <form action="#" class="post">
-                        <input type="text" placeholder="Ваше имя">
-                        <input type="tel" placeholder="Ваш телефон">
-                        <input type="e-mail" placeholder="Ваш e-mail">
-                        <button class="callback yellow" type="submit">Продолжить</button>
+                        <input type="text" class="first"  id="name1"class="first" placeholder="Ваше имя">
+                        <input type="tel"  class="first" id="tel1" placeholder="Ваш телефон">
+                        <input type="e-mail"  class="first" id="mail1" placeholder="Ваш e-mail">
+                        <button class="callback yellow first"   class="first" type="submited">Продолжить</button>
+
+                        <input type="text"  class="second" placeholder="Ваше еще что-то">
+                        <input type="tel"  class="second" placeholder="Ваш еще какой-то">
+                        <input type="e-mail" class="second"  placeholder="Что-то еще">
+                        <button class="callback yellow second" type="submit">Продолжить</button>
                     </form>
                 </div>
             </div>
@@ -425,39 +460,11 @@
     </section>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/sly.min.js"></script>
-    <script>
-        // Also can pass in optional settings block
-        var rellax1 = new Rellax('#b1', {
-            speed: 0.6,
-            center: false,
-            wrapper: null,
-            round: true,
-            vertical: true,
-            horizontal: false,
-        });
-
-        var rellax2 = new Rellax('#b2', {
-            speed: 3,
-            center: false,
-            wrapper: null,
-            round: true,
-            vertical: true,
-            horizontal: false,
-        });
-
-        var rellax3 = new Rellax('#b3', {
-            speed: 10,
-            center: false,
-            wrapper: null,
-            round: true,
-            vertical: true,
-            horizontal: false,
-        });
-    </script>
+    <script> var rellax = new Rellax(".rellax"); </script>
+    
 </body>
 
 </html>
