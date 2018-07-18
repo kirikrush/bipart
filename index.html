@@ -14,6 +14,13 @@
 </head>
 
 <body>
+
+            <div class="col-6 m-auto position-fixed modal modal-registration">
+                <h1 class="heading  text-center">Регистрация</h1>
+                <p class="paragraph  text-center">Зарегистрируйтесь в системе, чтобы получить
+                        доступ ко всем услугам </p>
+            </div>
+
     <section class="header">
         <div class="container header__container">
             <div class="row header__row">
@@ -302,8 +309,8 @@
                     <h1 class="heading text-center">Отзывы учеников</h1>
                 </div>
                 <div class="slider__container">
-                    <div class="feedback col-6 offset-3 d-flex">
-                        <div class="feedback d-flex">
+                    <div class="feedback active-feedback col-6 offset-3 d-flex">
+                        <div class=" d-flex">
                             <img src="images/girl.png" alt="" class="avatar col-4">
                             <div class="text ">
                                 <p class="paragraph">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев
@@ -416,11 +423,19 @@
                     </div>
                 </div>
                 <div class="col-2 m-auto d-flex justify-content-between align-items-center">
+                    <div id="prev">
+                        <div class="prev"></div>
+                        <div class="prev"></div>
+                    </div>
                     <div class="controll current" id="s0"></div>
                     <div class="controll" id="s1"></div>
                     <div class="controll" id="s2"></div>
                     <div class="controll" id="s3"></div>
                     <div class="controll" id="s4"></div>
+                    <div id="next">
+                        <div class="next"></div>
+                        <div class="next"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -435,13 +450,13 @@
                         <br> наставника, получите прибыль с первых дней.</p>
 
                     <div class="buttons ">
-                        <button class="blue activet step1">
+                        <button class="blue activet step1 step3">
                             <span>
                                 <span class="bignum">1 </span> шаг</span>
                         </button>
 
 
-                        <button class="blue non-activet step2">
+                        <button class="blue non-activet step2 step4">
                             <span>
                                 <span class="bignum">2 </span> шаг</span>
                         </button>
@@ -458,18 +473,18 @@
                 </div>
                 <div class="col-4 form offset-1">
                     <form action="#" class="post">
-                        <input type="text" class="first" id="name1" class="first" placeholder="Ваше имя">
-                        <input type="tel" class="first" id="tel1" placeholder="Ваш телефон">
-                        <input type="e-mail" class="first" id="mail1" placeholder="Ваш e-mail">
-                        <button class="callback yellow first" class="first" type="submited">Продолжить</button>
+                        <input type="text" class="first hid" id="name2" class="first" placeholder="Ваше имя">
+                        <input type="tel" class="first hid" id="tel2" placeholder="Ваш телефон">
+                        <input type="e-mail" class="first hid" id="mail2" placeholder="Ваш e-mail">
+                        <button class="callback yellow secyellow first hid" class="first" type="submited">Продолжить</button>
 
-                        <p class="paragraph second">Для получения доступа к базе данных нужно пройти
+                        <p class="paragraph second dih">Для получения доступа к базе данных нужно пройти
                             <a href="">регистрацию</a> на сайте нашего партнера и открыть первый депозит.</p>
-                        <p class="paragraph second" style="margin-top:24px;margin-bottom:28px">
+                        <p class="paragraph second dih" style="margin-top:24px;margin-bottom:28px">
                             <a href="">Для чего это нужно?</a>
                         </p>
-                        <input type="tel" class="second" placeholder="ID вашего аккаунта">
-                        <button class="callback yellow second" type="submit">Завершить регистрацию</button>
+                        <input type="tel" class="second dih" placeholder="ID вашего аккаунта">
+                        <button class="callback yellow second dih" type="submit">Завершить регистрацию</button>
                     </form>
                 </div>
             </div>
