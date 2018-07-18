@@ -21,6 +21,7 @@ $(document).ready(() => {
     $(".controll").click(e => {
         activeSlide.toggleClass("current");
         activeSlide = $(e.currentTarget);
+        activeSlide.toggleClass("current");
         multiplicator = +activeSlide.attr("id").split("s")[1]
         shift = multiplicator * (131.9 + $(".feedback").width());
         $(".feedback").css("left", -shift + "px")

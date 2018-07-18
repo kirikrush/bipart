@@ -28,7 +28,8 @@
 * {
     font-family: "Helvetica Neue Cyr - Roman";
     font-weight: 400;
-    line-height: 1.7
+    line-height: 1.7;
+    letter-spacing: 0.32px;
 }
 
 body {
@@ -70,6 +71,13 @@ button {
     display: block;
 }
 
+button:active,
+button:focus,
+input:focus,
+input:active {
+    outline: none;
+}
+
 button:hover,
 label:hover,
 a:hover {
@@ -89,6 +97,7 @@ a:hover {
 
 .callback-text {
     color: #fff;
+    font-family: "Helvetica Neue Cyr";
 }
 
 .arrow::before {
@@ -97,9 +106,7 @@ a:hover {
     width: 22px;
     height: 21px;
     background-image: url(../images/arrow.png);
-    position: absolute;
-    left: 47px;
-    top: 22px;
+    margin-right: 10px;
 }
 
 .header__row {
@@ -130,9 +137,10 @@ section:not(.header) {
 .top__head,
 .top__head-big,
 .top__head-subhead {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-family: "Helvetica Neue Cyr";
     font-weight: 900;
+    letter-spacing: -0.34px;
 }
 
 section.top__layer {
@@ -144,23 +152,30 @@ section.top__layer {
 
 .top__head {
     color: #fff;
-    font-size: 38px;
+    font-size: 34px;
 }
 
 .top__head-big {
     color: #fff;
-    font-size: 49px;
+    font-size: 54px;
     background-color: #0053d3;
     line-height: 120%;
-    width: 102%;
+    width: 111%;
     padding: 5px 2%;
     position: relative;
     left: -2%;
+    white-space: nowrap;
+    letter-spacing: -0.54px;
 }
 
 .top__head-subhead {
-    font-size: 24px;
+    font-size: 22px;
     color: #fff;
+    letter-spacing: 0.32px;
+}
+
+.top__bitcoin {
+    width: 100%;
 }
 
 .top__paragraph {
@@ -168,6 +183,7 @@ section.top__layer {
     color: #ffffff;
     font-size: 17px;
     margin-top: 40px;
+    letter-spacing: 0.34px;
 }
 
 .yellow {
@@ -175,6 +191,7 @@ section.top__layer {
     box-shadow: 0 12px 9px 1px rgba(0, 0, 0, 0.28), 0 5px 0 #e9a502, inset 0 30000px 7px rgba(0, 0, 0, 0.01);
     margin: 20px 0;
     width: 284px;
+    height: 74px;
     font-size: 16px;
 }
 
@@ -277,6 +294,12 @@ form input {
     display: none;
 }
 
+.second.paragraph {
+    width: 104%;
+    line-height: 25px;
+    letter-spacing: 0.15px;
+}
+
 .accept {
     color: #323232;
     font-family: "Helvetica Neue Cyr - Roman";
@@ -293,9 +316,14 @@ form input {
     transition: box-shadow .3s ease-in-out;
     margin-top: 6px;
     margin-right: 8px;
+    border: 1px #4599f5 solid;
 }
 
 #check:checked+label .check {
+    box-shadow: inset #fff 0 0 0 2px;
+}
+
+#chec1:checked+label .check1 {
     box-shadow: inset #fff 0 0 0 2px;
 }
 
@@ -304,9 +332,10 @@ label {
     align-items: start;
 }
 
-.accept a {
-    color: #0053d3;
-    text-decoration: underline #0053d3 solid;
+.accept a,
+.paragraph a {
+    color: #4599f5;
+    text-decoration: underline #4599f5 solid;
 }
 
 input::-webkit-input-placeholder {
@@ -442,7 +471,6 @@ section.signals {
 .blog-post:hover {
     transform: scale(1.1);
     z-index: 2;
-    box-shadow: 0 0 44px 40px rgba(0, 0, 0, 0.13);
 }
 
 .blog-heading {
@@ -501,19 +529,21 @@ section.signals {
     font-weight: 700;
     text-transform: uppercase;
 }
-.descriptions__container{
+
+.descriptions__container {
     position: relative;
     right: -60px;
 }
 
-.disactiv{
+.disactiv {
     display: none;
 }
+
 .description {
     padding: 50px 50px 50px 70px;
     background-image: url(../images/description.png);
-    background-size: cover;
-    width:94%;
+    background-size: contain;
+    width: 94%;
 }
 
 .description .paragraph {
@@ -538,10 +568,6 @@ section.signals {
     color: #fff;
     transition: .5s ease;
     animation: pulse infinite 2s;
-}
-
-.active {
-    background-color: #00e2e2;
 }
 
 #express {
@@ -606,7 +632,7 @@ section.signals {
 section.crypto {
     background-image: url(../images/topbg.png);
     position: relative;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .crypto .heading {
@@ -616,7 +642,7 @@ section.crypto {
 
 .graphic {
     position: relative;
-    left: -90%;
+    left: -40%;
     top: -33px;
     z-index: 3;
 }
@@ -626,20 +652,25 @@ section.crypto {
     display: inline;
     padding: 0 10px;
 }
-.crypto .top__paragraph{
-    margin-top:20px;
+
+.crypto .top__paragraph {
+    margin-top: 20px;
 }
+
 .h40 {
     height: 40px;
 }
-.enter{
+
+.enter {
     position: relative;
-    top:20px;
-    left:20px;
+    top: 20px;
+    left: 20px;
 }
+
 a.white {
     color: #fff;
     text-decoration: rgba(255, 255, 255, .4) underline solid;
+    margin-right: 30px;
 }
 
 .bitcoin {
@@ -656,7 +687,7 @@ a.white {
 }
 
 #b1 {
-    top: 92%;
+    top: 73%;
     z-index: 3;
     width: 150px
 }
@@ -668,22 +699,24 @@ a.white {
 }
 
 #b3 {
-    top: 70%;
+    top: 30%;
     z-index: 3;
     right: 15%;
     width: 400px;
 }
 
 /* Crypto styles */
-.bonus  .paragraph{
-    width:80%;
+
+.bonus .paragraph {
+    width: 80%;
 }
 
-.present{
+.present {
     position: relative;
-    right:120px;
-    top:50px;
+    right: 120px;
+    top: 50px;
 }
+
 .feedbacks {
     background-color: #ecf3fd;
 }
@@ -696,6 +729,14 @@ a.white {
     margin-top: 40px;
 }
 
+.slider__container .col-6 {
+    max-width: 40%;
+}
+
+.feedbacks .col-2 {
+    max-width: 12%;
+}
+
 .feedback {
     flex-shrink: 0;
     padding: 0;
@@ -703,15 +744,32 @@ a.white {
     left: 0;
     transition: .3s ease;
     background-color: #fff;
+    width: 100%;
+}
+
+.feedback .paragraph {
+    opacity: 0.8;
+    color: #000000;
+    font-family: "Helvetica Neue Cyr - Roman";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.16px;
 }
 
 .avatar {
     padding: 0;
     object-fit: cover;
+    width: 100%;
+}
+
+.info {
+    margin-top: 20px;
+    padding-bottom: 40px;
 }
 
 .text {
-    padding: 40px;
+    padding: 0 40px;
     justify-content: space-between;
     display: flex;
     flex-direction: column;
@@ -736,21 +794,75 @@ span.age {
 }
 
 .controll {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     background-color: #c7ccd4;
     border-radius: 100%;
     margin-top: 40px;
+    transition: .3s ease;
+    border: 2px solid #c7ccd4;
 }
 
 .current {
-    width: 35px;
-    height: 35px;
-}
-
-.controll+.current {
-    width: 27px;
-    height: 27px;
+    transform: scale(2);
+    background-color: #6799f3;
 }
 
 /* Feedbacks */
+
+footer {
+    background-image: url(../images/bgfooter.png);
+    padding: 40px 0;
+}
+
+footer .nav__list-item {
+    color: #fff;
+}
+
+.copyright {
+    opacity: 0.6;
+    color: #ffffff;
+    font-family: "Helvetica Neue Cyr - Roman";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29.26px;
+    letter-spacing: 0.16px;
+    margin: 0;
+    text-align: end;
+}
+
+.copyright a {
+    opacity: 0.6;
+    color: #ffffff;
+    font-family: "Helvetica Neue Cyr - Roman";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 29.26px;
+    text-decoration: underline;
+    letter-spacing: 0.14px;
+}
+
+.footerlogo {
+    color: #ffffff;
+    font-family: "Helvetica Neue Cyr";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29.26px;
+    text-transform: uppercase;
+    letter-spacing: 0.16px;
+}
+
+.footerlogo span {
+    white-space: nowrap;
+    color: #ffffff;
+    font-family: "Helvetica Neue Cyr";
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 29.26px;
+    letter-spacing: 0.15px;
+    text-transform: none;
+}
+footer img{
+    width: 100%;
+}
+/* Footer styles */

@@ -41,7 +41,7 @@
                 </div>
                 <div class="col-3 ml-auto">
                     <button class="callback ml-auto">
-                        <span class="callback-text arrow">Начать обучение</span>
+                        <span class="callback-text arrow d-flex align-items-center">Начать обучение</span>
                     </button>
                 </div>
             </div>
@@ -89,23 +89,30 @@
                                 <span class="bignum">2 </span> шаг</span>
                         </button>
                     </div>
-                    <input type="checkbox" id="check" class="d-none">
-                    <label for="check"><div class="check"></div>
-                    <p class="paragraph accept">Я согласен на передачу и обработку<br>
-                        своих <a href="">персональных данных</a></p></label>
+                    <input type="checkbox" checked="checked" id="check" class="d-none">
+                    <label for="check">
+                        <div class="check"></div>
+                        <p class="paragraph accept">Я согласен на передачу и обработку
+                            <br> своих
+                            <a href="">персональных данных</a>
+                        </p>
+                    </label>
 
                 </div>
                 <div class="col-4 form offset-1">
                     <form action="#" class="post">
-                        <input type="text" class="first"  id="name1"class="first" placeholder="Ваше имя">
-                        <input type="tel"  class="first" id="tel1" placeholder="Ваш телефон">
-                        <input type="e-mail"  class="first" id="mail1" placeholder="Ваш e-mail">
-                        <button class="callback yellow first"   class="first" type="submited">Продолжить</button>
+                        <input type="text" class="first" id="name1" class="first" placeholder="Ваше имя">
+                        <input type="tel" class="first" id="tel1" placeholder="Ваш телефон">
+                        <input type="e-mail" class="first" id="mail1" placeholder="Ваш e-mail">
+                        <button class="callback yellow first" class="first" type="submited">Продолжить</button>
 
-                        <input type="text"  class="second" placeholder="Ваше еще что-то">
-                        <input type="tel"  class="second" placeholder="Ваш еще какой-то">
-                        <input type="e-mail" class="second"  placeholder="Что-то еще">
-                        <button class="callback yellow second" type="submit">Продолжить</button>
+                        <p class="paragraph second">Для получения доступа к базе данных нужно пройти
+                            <a href="">регистрацию</a> на сайте нашего партнера и открыть первый депозит.</p>
+                        <p class="paragraph second" style="margin-top:24px;margin-bottom:28px">
+                            <a href="">Для чего это нужно?</a>
+                        </p>
+                        <input type="tel" class="second" placeholder="ID вашего аккаунта">
+                        <button class="callback yellow second" type="submit">Завершить регистрацию</button>
                     </form>
                 </div>
             </div>
@@ -257,17 +264,18 @@
         <img src="images/crypto.png" alt="" class="bitcoin blured rellax" data-rellax-speed="3" id="b3" data-rellax-percentage="0.5">
         <div class="container">
             <div class="row row__crypto">
-                <div class="col-2">
+                <div class="col-3">
                     <img src="images/graphic.png" alt="" class="graphic">
                 </div>
-                <div class="col-5 offset-1 text-center">
+                <div class="col-6  text-center">
                     <h1 class="heading">Следуй за нами</h1>
                     <h1 class="heading blued">прямо сейчас</h1>
-                    <p class="top__paragraph">Наша цель заключается в том, чтобы все наши студенты начали зарабатывать еще в ходе обучения</p>
+                    <p class="top__paragraph">Наша цель заключается в том, чтобы все наши
+                        <br> студенты начали зарабатывать еще в ходе обучения</p>
                 </div>
-                <div class="col-4 text-center d-flex flex-column align-items-center justify-content-start enter">
+                <div class="col-3 text-center d-flex flex-column align-items-end justify-content-start enter">
                     <button class="yellow callback">Зарегистрироваться</button>
-                    <a href="" class="get_access white">Войти в личный кабинет</a>
+                    <a href="" class="get_access white align-self-center">Войти в личный кабинет</a>
                 </div>
             </div>
         </div>
@@ -295,23 +303,25 @@
                 </div>
                 <div class="slider__container">
                     <div class="feedback col-6 offset-3 d-flex">
-                        <img src="images/girl.png" alt="" class="avatar col-4">
-                        <div class="text ">
-                            <p class="paragraph">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более
-                                менее осмысленного текста рыбы на русском языке. Сайт рыбатекст поможет дизайнеру, верстальщику,
-                                вебмастеру сгенерировать</p>
-                            <div class="info d-flex align-items-center justify-content-between">
-                                <div class="name">
-                                    <span class="name d-block">Мария Иванова</span>
-                                    <span class="age d-block">29лет, домохозяйка</span>
-                                </div>
-                                <div class="social">
-                                    <a href="" class="soc">
-                                        <img src="images/facebook.png" alt="" class="soc-img">
-                                    </a>
-                                    <a href="" class="soc">
-                                        <img src="images/vk.png" alt="" class="soc-img">
-                                    </a>
+                        <div class="feedback d-flex">
+                            <img src="images/girl.png" alt="" class="avatar col-4">
+                            <div class="text ">
+                                <p class="paragraph">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев
+                                    более менее осмысленного текста рыбы на русском языке. Сайт рыбатекст поможет дизайнеру,
+                                    верстальщику, вебмастеру сгенерировать</p>
+                                <div class="info d-flex align-items-center justify-content-between">
+                                    <div class="name">
+                                        <span class="name d-block">Мария Иванова</span>
+                                        <span class="age d-block">29лет, домохозяйка</span>
+                                    </div>
+                                    <div class="social">
+                                        <a href="" class="soc">
+                                            <img src="images/facebook.png" alt="" class="soc-img">
+                                        </a>
+                                        <a href="" class="soc">
+                                            <img src="images/vk.png" alt="" class="soc-img">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -436,35 +446,79 @@
                                 <span class="bignum">2 </span> шаг</span>
                         </button>
                     </div>
-                    <input type="checkbox" id="check" class="d-none">
-                    <label for="check"><div class="check"></div>
-                    <p class="paragraph accept">Я согласен на передачу и обработку<br>
-                        своих <a href="">персональных данных</a></p></label>
+                    <input type="checkbox" id="check1" class="d-none">
+                    <label for="check1">
+                        <div class="check"></div>
+                        <p class="paragraph accept">Я согласен на передачу и обработку
+                            <br> своих
+                            <a href="">персональных данных</a>
+                        </p>
+                    </label>
 
                 </div>
                 <div class="col-4 form offset-1">
                     <form action="#" class="post">
-                        <input type="text" class="first"  id="name1"class="first" placeholder="Ваше имя">
-                        <input type="tel"  class="first" id="tel1" placeholder="Ваш телефон">
-                        <input type="e-mail"  class="first" id="mail1" placeholder="Ваш e-mail">
-                        <button class="callback yellow first"   class="first" type="submited">Продолжить</button>
+                        <input type="text" class="first" id="name1" class="first" placeholder="Ваше имя">
+                        <input type="tel" class="first" id="tel1" placeholder="Ваш телефон">
+                        <input type="e-mail" class="first" id="mail1" placeholder="Ваш e-mail">
+                        <button class="callback yellow first" class="first" type="submited">Продолжить</button>
 
-                        <input type="text"  class="second" placeholder="Ваше еще что-то">
-                        <input type="tel"  class="second" placeholder="Ваш еще какой-то">
-                        <input type="e-mail" class="second"  placeholder="Что-то еще">
-                        <button class="callback yellow second" type="submit">Продолжить</button>
+                        <p class="paragraph second">Для получения доступа к базе данных нужно пройти
+                            <a href="">регистрацию</a> на сайте нашего партнера и открыть первый депозит.</p>
+                        <p class="paragraph second" style="margin-top:24px;margin-bottom:28px">
+                            <a href="">Для чего это нужно?</a>
+                        </p>
+                        <input type="tel" class="second" placeholder="ID вашего аккаунта">
+                        <button class="callback yellow second" type="submit">Завершить регистрацию</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
+    <footer>
+        <div class="container">
+            <div class="row row__footer d-flex justify-content-between align-items-center">
+                <div class="col-3 mr-auto">
+                    <img src="images/footerlogo.png" alt="">
+                </div>
+                <div class="col-6">
+                    <ul class="nav">
+                        <li class="nav__list-item">
+                            <a href="#">Главная</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="#">О проекте</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="#">Отзывы</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="#">Блог</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="#">Поддержка</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3 ml-auto">
+                    <p class="paragraph copyright">
+                        Сайт разработан в:
+                        <br>
+                        <a href="http://digitalrift.agency"> Digital Rift Agency</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/sly.min.js"></script>
-    <script> var rellax = new Rellax(".rellax"); </script>
-    
+    <script>
+        var rellax = new Rellax(".rellax");
+    </script>
+
 </body>
 
 </html>
