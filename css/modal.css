@@ -1,0 +1,93 @@
+.modal {
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 0 39px 4px rgba(0, 0, 0, 0.1);
+    position: static;
+    padding: 50px 130px;
+    z-index: 4;
+    box-shadow: 0 0 39px 4px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+}
+
+.modal-registration {
+    display: block;
+}
+
+.modal-paragraph {
+    opacity: 0.88;
+    color: #323232;
+    font-family: "Helvetica Neue Cyr - Roman";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.17px;
+    margin-top: 27px;
+}
+
+.modal input {
+    margin-bottom: 15px;
+    width: 282px;
+    height: 60px;
+}
+
+.modal-post button {
+    margin: 0 auto 40px;
+    width: 280px;
+}
+
+.active-modal {
+    display: block;
+}
+
+.hidden-modal {
+    display: none;
+}
+
+.error {
+    border-color: rgb(221, 55, 55);
+    border-width: 2px;
+    animation: shake .7s;
+    -webkit-animation: shake .7s;
+    -o-animation: shake .7s;
+    -moz-animation: shake .7s
+}
+
+.paragraph-bold {
+    color: #323232;
+    font-family: "Helvetica Neue Cyr";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.paragraph-bold+.modal-paragraph {
+    display: none;
+}
+
+.modal-img{
+    margin: 40px auto;
+}
+
+/* Modal windows styles */
+
+@keyframes shake {
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}

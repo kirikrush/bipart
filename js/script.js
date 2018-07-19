@@ -159,4 +159,12 @@ $(document).ready(() => {
         }, 700);
     })
 
+
+    $(".header button.callback, .top__layer button.callback").click(()=> {
+        $(".modal-container, .modal-registration").fadeIn(200);
+    })
+    $(".modal-container").click(()=>{
+        $(".modal-container").fadeOut(200);
+        $(".modal").fadeOut(200);
+    })
 })

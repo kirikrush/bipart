@@ -35,7 +35,6 @@
 body {
     overflow-x: hidden;
     overflow-y: scroll;
-    transform-style: preserve-3d;
 }
 
 .wrapper {
@@ -137,7 +136,8 @@ section:not(.header) {
 }
 
 .header {
-    margin: 20px auto;
+    margin: 0 auto 20px;
+    padding: 20px 0;
 }
 
 .top__head,
@@ -1059,11 +1059,10 @@ span.age {
     border-radius: 100%;
     margin-top: 40px;
     transition: .3s ease;
-    border: 2px solid #c7ccd4;
 }
 
-.controll:nth-child(1),
-.controll:nth-child(5) {
+.controll:nth-child(2),
+.controll:nth-child(6) {
     width: 14px;
     height: 14px;
 }
@@ -1072,20 +1071,23 @@ span.age {
 #prev {
     display: flex;
     flex-direction: column;
-    margin-top:40px;
     position: relative;
-    top:24px;
-}
-#prev{
-    position: relative;
-    right:9px;
-}
-.next:first-child, .prev:last-child{
-    transform: rotate(45deg) translate(3px,-3px)
+    top: 24px;
 }
 
-.next:last-child, .prev:first-child{
-    transform: rotate(-45deg) translate(3px,3px)
+#prev {
+    position: relative;
+    right: 9px;
+}
+
+.next:first-child,
+.prev:last-child {
+    transform: rotate(45deg) translate(3px, -3px)
+}
+
+.next:last-child,
+.prev:first-child {
+    transform: rotate(-45deg) translate(3px, 3px)
 }
 
 .next,
@@ -1099,7 +1101,6 @@ span.age {
 }
 
 .current {
-    transform: scale(2);
     background-color: #6799f3;
 }
 
@@ -1161,15 +1162,8 @@ footer .nav__list-item {
 footer img {
     width: 100%;
 }
-
+.shadowed{
+    box-shadow: 0 0 39px 4px rgba(0, 0, 0, 0.1);
+}
 /* Footer styles */
 
-.modal {
-    display: none;
-    background-color: #fff;
-    box-shadow: 0 0 39px 4px rgba(0, 0, 0, 0.1);
-    height: 75vh;
-    top: 12.5vh;
-}
-
-/* Modal windows styles */
