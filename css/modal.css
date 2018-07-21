@@ -3,10 +3,11 @@
     background-color: #fff;
     box-shadow: 0 0 39px 4px rgba(0, 0, 0, 0.1);
     position: static;
-    padding: 50px 130px;
+    padding: 50px 80px;
     z-index: 4;
     box-shadow: 0 0 39px 4px rgba(0, 0, 0, 0.1);
-    margin: 40px auto;
+    margin: 60px auto;
+    min-height: 650px;
 }
 
 .modal-registration {
@@ -62,12 +63,36 @@
     cursor: pointer;
 }
 
+.write {
+    opacity: 0.5;
+    color: #323232;
+    font-family: "Helvetica Neue Cyr - Roman";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    text-decoration: underline;
+    letter-spacing: 0.32px;
+    margin: 20px auto 40px;
+}
+
 .paragraph-bold+.modal-paragraph {
     display: none;
 }
 
-.modal-img{
+.modal-img {
     margin: 40px auto;
+}
+
+.help{
+    height: 550px;
+    position: relative;
+}
+
+.help button{
+    position: absolute;
+    left:50%;
+    transform: translate(-50%);
+    bottom: 8%;
 }
 
 /* Modal windows styles */

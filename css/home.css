@@ -132,3 +132,11 @@ ul .active-item::after {
     margin-right:10px;
     background-image: url(../images/logout.png);
 }
+
+.express-modal{
+    margin-top:70px;
+}
+
+.personal__tutorial-courselist{
+    box-shadow: 0 0 39px 4px rgba(0, 0, 0, 0.1);
+}
