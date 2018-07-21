@@ -35,6 +35,8 @@
 body {
     overflow-x: hidden;
     overflow-y: scroll;
+    width:1600px;
+    margin: 0 auto;
 }
 
 .wrapper {
