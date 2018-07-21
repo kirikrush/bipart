@@ -136,7 +136,7 @@ section:not(.header) {
 }
 
 .header {
-    margin: 0 auto 20px;
+    margin: 0 auto;
     padding: 20px 0;
 }
 
@@ -282,7 +282,7 @@ section.top__layer {
     color: #4599f5;
 }
 
-form input {
+form input, .personal__info-input {
     margin-bottom: 21px;
     width: 284px;
     height: 62px;
