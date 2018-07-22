@@ -1,4 +1,6 @@
-
+.container{
+    width:1140px !important;
+}
 
 .personal__navbar {
     list-style-type: none;
@@ -141,4 +143,67 @@ ul .active-item::after {
 
 .personal__tutorial-courselist {
     box-shadow: 0 0 39px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 40px 0;
+}
+
+
+ ul li ul li{
+    padding:0px 10px 0px 40px;
+}
+ul {
+    list-style-type: none;
+}
+
+li ul {
+    padding: 0;
+}
+
+.course-title {
+    font-family: "Helvetica Neue Cyr";
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    line-height: 24px;
+    padding-left:40px;
+}
+
+.category-list {
+    padding: 0;
+}
+
+.lessons-list{
+    margin-bottom:20px;
+}
+
+.category-item {
+    color: #323232;
+    font-family: "Helvetica Neue Cyr - Roman";
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.lessons-item {
+    font-size: 17px;
+    margin-bottom: -6px;
+    letter-spacing: 0.34px;
+    line-height: 30px;
+    transition: .3s ease;
+}
+
+.active-list{
+    background-color: #4392e9;
+    color: #fff;
+    z-index: 3;
+}
+
+.lessons-item:not(.active-list):hover{
+    color: #4392e9;
+}
+.bold{
+    font-weight: 600;
+}
+
+ul span{
+    padding-left: 40px;
 }
