@@ -25,6 +25,10 @@
     font-weight: 400;
 }
 
+.container {
+    width: 1140px !important;
+}
+
 * {
     font-family: "Helvetica Neue Cyr - Roman";
     font-weight: 400;
@@ -282,7 +286,8 @@ section.top__layer {
     color: #4599f5;
 }
 
-form input, .personal__info-input {
+form input,
+.personal__info-input {
     margin-bottom: 21px;
     width: 284px;
     height: 62px;
@@ -1162,8 +1167,9 @@ footer .nav__list-item {
 footer img {
     width: 100%;
 }
-.shadowed{
+
+.shadowed {
     box-shadow: 0 0 39px 4px rgba(0, 0, 0, 0.1);
 }
-/* Footer styles */
 
+/* Footer styles */
