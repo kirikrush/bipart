@@ -43,8 +43,16 @@ $(document).ready(() => {
 
 
     $(".paragraph-bold").click((e) => {
-        console.log($(e.currentTarget).siblings());
-        $(e.currentTarget).next().slideToggle(300);
+        if ($(e.currentTarget).next().hasClass("active-paragraph")) {
+            $(".active-paragraph").slideUp(300);
+            $(".active-paragraph").removeClass("active-paragraph");
+        } else {
+
+            $(".active-paragraph").slideUp(300);
+            $(".active-paragraph").removeClass("active-paragraph");
+            $(e.currentTarget).next().slideDown(300);
+            $(e.currentTarget).next().addClass("active-paragraph");
+        }
     })
 
 
@@ -53,28 +61,26 @@ $(document).ready(() => {
         $(".validate").fadeOut(300);
         setTimeout(() => {
             $(".help").fadeIn(300);
-        },300)
+        }, 300)
 
     })
 
-    $(".help button").click(()=>{
+    $(".help button").click(() => {
         $(".help").fadeOut(300);
         setTimeout(() => {
             $(".validate").fadeIn(300);
-        },300)
+        }, 300)
     })
 
 
-    $(".validate .submit").click((e)=>{
+    $(".validate .submit").click((e) => {
         e.preventDefault()
-        if($("#id").val()!=""){
+        if ($("#id").val() != "") {
             $(".validate").fadeOut(300);
             setTimeout(() => {
                 $(".success").fadeIn(300);
-            },300)
-        }
-
-        else{
+            }, 300)
+        } else {
             $("#id").toggleClass("error");
         }
     })

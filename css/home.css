@@ -1,5 +1,5 @@
-.container{
-    width:1140px !important;
+.container {
+    width: 1140px !important;
 }
 
 .personal__navbar {
@@ -147,10 +147,10 @@ ul .active-item::after {
     padding: 40px 0;
 }
 
-
- ul li ul li{
-    padding:0px 10px 0px 40px;
+ul li ul li {
+    padding: 0px 10px 0px 40px;
 }
+
 ul {
     list-style-type: none;
 }
@@ -165,15 +165,15 @@ li ul {
     font-weight: 600;
     letter-spacing: 0.4px;
     line-height: 24px;
-    padding-left:40px;
+    padding-left: 40px;
 }
 
 .category-list {
     padding: 0;
 }
 
-.lessons-list{
-    margin-bottom:20px;
+.lessons-list {
+    margin-bottom: 20px;
 }
 
 .category-item {
@@ -191,19 +191,55 @@ li ul {
     transition: .3s ease;
 }
 
-.active-list{
+.active-list {
     background-color: #4392e9;
     color: #fff;
     z-index: 3;
 }
 
-.lessons-item:not(.active-list):hover{
+.lessons-item:not(.active-list):hover {
     color: #4392e9;
 }
-.bold{
+
+.bold {
     font-weight: 600;
 }
 
-ul span{
+ul span {
     padding-left: 40px;
+}
+
+.part-title {
+    color: #323232;
+    font-family: "Helvetica Neue Cyr";
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 45.44px;
+    margin-bottom: 10px;
+    letter-spacing: 0.4px;
+}
+
+.part-directory {
+    opacity: 0.5;
+    color: #323232;
+    font-family: "Helvetica Neue Cyr - Roman";
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.16px;
+}
+
+.course-paragraph {
+    margin: 0;
+    padding: 0;
+    color: #323232;
+    font-family: "Helvetica Neue Cyr - Roman";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.16px;
+}
+
+.text{
+    margin:40px 0 0 0;
+    padding: 0;
 }

@@ -5,7 +5,12 @@ $(document).ready((e) => {
         $(".active-modal").toggleClass("active-modal hidden-modal")
         $("." + $(e.currentTarget).attr("id") + "-modal").toggleClass("active-modal hidden-modal");
     })
-
+    $(".lessons-item").click((e)=>{
+        $(".active-list").removeClass("active-list");
+        $(e.currentTarget).addClass("active-list");
+    
+    
+    })
 
 
 })
