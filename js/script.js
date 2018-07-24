@@ -50,14 +50,14 @@ $(document).ready(() => {
     $(".yellow[type=submited]:not(.secyellow)").click((e) => {
         e.preventDefault();
         error = 0;
-        if ($("#name1").val() == "") {
+        if ($("#name1").val().trim() == "") {
             error = 1;
             $("#name1").val("");
             $("#name1").hasClass("error") ? console.log : $("#name1").toggleClass("error");
         } else {
             $("#name1").hasClass("error") ? $("#name1").toggleClass("error") : console.log
         }
-        if ($("#tel1").val() == "") {
+        if ($("#tel1").val().trim() == "") {
             error = 3;
             $("#tel1").val("");
             $("#tel1").hasClass("error") ? console.log : $("#tel1").toggleClass("error");
@@ -84,17 +84,17 @@ $(document).ready(() => {
 
     $(".step1:not(.step3)").click((e) => {
         if ($(e.currentTarget).hasClass("non-activet")) {
-                $(".second:not(.dih)").fadeOut(300);
-                $(".step1:not(.step3)").toggleClass("activet non-activet");
-                $(".step2:not(.step4)").toggleClass("activet non-activet");
-                setTimeout(() => {
-                    $(".first:not(.hid)").fadeIn(300);
-                }, 600)
+            $(".second:not(.dih)").fadeOut(300);
+            $(".step1:not(.step3)").toggleClass("activet non-activet");
+            $(".step2:not(.step4)").toggleClass("activet non-activet");
+            setTimeout(() => {
+                $(".first:not(.hid)").fadeIn(300);
+            }, 600)
         }
     })
     $(".step2:not(.step4)").click((e) => {
-        
-    $(".yellow[type=submited]:not(.secyellow)").click();
+
+        $(".yellow[type=submited]:not(.secyellow)").click();
     })
 
     $(".yellow[type=submit]").click(() => {
@@ -108,14 +108,14 @@ $(document).ready(() => {
         e.preventDefault();
         e.preventDefault();
         error = 0;
-        if ($("#name2").val() == "") {
+        if ($("#name2").val().trim() == "") {
             error = 1;
             $("#name2").val("");
-            $("#name22").hasClass("error") ? console.log : $("#name2").toggleClass("error");
+            $("#name2").hasClass("error") ? console.log : $("#name2").toggleClass("error");
         } else {
             $("#name2").hasClass("error") ? $("#name2").toggleClass("error") : console.log
         }
-        if ($("#tel2").val() == "") {
+        if ($("#tel2").val().trim() == "") {
             error = 3;
             $("#tel2").val("");
             $("#tel2").hasClass("error") ? console.log : $("#tel2").toggleClass("error");
@@ -195,5 +195,31 @@ $(document).ready(() => {
     $(".modal-container").click(() => {
         $(".modal-container").fadeOut(200);
         $(".modal").fadeOut(200);
+    })
+
+    $(".openmodal").click((e) => {
+        e.preventDefault();
+        $(".modal__row").fadeIn(300);
+        $(".hidden-modal").fadeIn(300);
+        $(".paragraph-bold").eq(0).click();
+    })
+
+
+    $(".paragraph-bold").click((e) => {
+        if ($(e.currentTarget).next().hasClass("active-paragraph")) {
+            $(".active-paragraph").slideUp(300);
+            $(".active-paragraph").removeClass("active-paragraph");
+        } else {
+
+            $(".active-paragraph").slideUp(300);
+            $(".active-paragraph").removeClass("active-paragraph");
+            $(e.currentTarget).next().slideDown(300);
+            $(e.currentTarget).next().addClass("active-paragraph");
+        }
+    })
+
+    $(".modal button").click(() => {
+        $(".modal__row").fadeOut(300);
+        $(".hidden-modal").fadeOut(300);
     })
 })
