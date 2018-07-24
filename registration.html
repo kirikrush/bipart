@@ -51,22 +51,25 @@
     </section>
     <div class="container">
         <div class="row">
-            <div class="col-6  modal modal-registration">
+            <div class="col-7  modal modal-registration">
                 <form action="" class="modal-post m-auto text-center">
                     <div class="reg active-modal">
                         <h1 class="heading  text-center">Регистрация</h1>
                         <p class="paragraph  text-center modal-paragraph">Зарегистрируйтесь в системе, чтобы получить
                             <br> доступ ко всем услугам </p>
-                        <input type="text" id="surname" placeholder="Ваша фамилия">
                         <input type="text" id="name" placeholder="Ваше имя">
                         <input type="text" id="tel" placeholder="Ваш телефон">
                         <input type="text" id="mail" placeholder="Ваш e-mail">
                         <button class="yellow callback submit">
                             <span class="callback-text">Продолжить</span>
+
                         </button>
+                        <span class="ps d-block">У меня уже есть аккаунт -
+                            <a id="auth" href="">Войти</a>
+                        </span>
                     </div>
                     <div class="validate hidden-modal">
-                        <h1 class="heading">Валидация</h1>
+                        <h1 class="heading">Верификация</h1>
                         <p class="paragraph text-center modal-paragraph accpet">Для получения доступа к базе данных
                             <br> нужно пройти
                             <a href="">регистрацию</a> на сайте
@@ -75,6 +78,10 @@
                         <p class="paragraph">
                             <a id="deposit" href="">Для чего это нужно и с какого
                                 <br> депозита начать?</a>
+                        </p>
+
+                        <p class="paragraph">
+                            <a id="deposit2" href="">Какой депозит подойдет для вас? </a>
                         </p>
 
                         <input type="text" id="id" placeholder="ID вашего аккаунта">
@@ -86,6 +93,20 @@
                         </button>
                     </div>
                 </form>
+                <div class="auth hidden-modal">
+                    <h1 class="heading text-center">Авторизация</h1>
+                    <p class="modal-paragraph text-center">Авторизуйтесь в системе, чтобы получить доступ
+                        <br> ко всем услугам</p>
+                    <form action="" class="modal-post m-auto text-center">
+                        <input type="text" placeholder="Ваше имя">
+                        <input type="text" placeholder="Ваш пароль">
+                        <button class="callback yellow">
+                            <span class="callback-text">Войти</span>
+                        </button>
+                    </form>
+                    <span class="ps d-block text-center">Забыли пароль?</span>
+                    <a href="" class="d-block text-center">Регистрация</a>
+                </div>
                 <div class="help hidden-modal">
                     <h1 class="heading text-center">Помощь</h1>
                     <p class="paragraph-bold">
@@ -105,7 +126,7 @@
                         Для начала успешной деятельности с соблюдением всех видов менеджмента, без риска потери средств, вам понадобится от 80$ до
                         450$. Помните, чем больше ваш депозит, тем больше ваша прибыль.
                     </p>
-                    
+
                     <button class="callback yellow d-block m-auto">
                         <span class="callback-text">Вернуться к регистрации</span>
                     </button>

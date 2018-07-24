@@ -1,7 +1,3 @@
-.container {
-    width: 1140px !important;
-}
-
 .personal__navbar {
     list-style-type: none;
     background-color: #fff;
@@ -122,6 +118,7 @@ ul .active-item::after {
     display: inline-block;
     margin-right: 10px;
     background-image: url(../images/user.png);
+    background-repeat: no-repeat;
 }
 
 .user-logout:hover {
@@ -135,6 +132,7 @@ ul .active-item::after {
     display: inline-block;
     margin-right: 10px;
     background-image: url(../images/logout.png);
+    background-repeat: no-repeat;
 }
 
 .express-modal {
@@ -145,6 +143,7 @@ ul .active-item::after {
     box-shadow: 0 0 39px 4px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 40px 0;
+    height: 100%;
 }
 
 ul li ul li {
@@ -239,7 +238,100 @@ ul span {
     letter-spacing: 0.16px;
 }
 
-.text{
-    margin:40px 0 0 0;
+.course-paragraph img {
+    max-width: 100%;
+    padding: 20px 0;
+    display: block;
+}
+
+.text {
+    margin: 40px 0 0 0;
     padding: 0;
+}
+
+.part,
+block {
+    display: none
+}
+
+.active-part,
+.active-block {
+    display: block;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    right: 222px;
+    z-index: 10;
+    width: 380px;
+}
+
+.signals-modal a {
+    color: #4392e9;
+    text-decoration: underline;
+    display: block;
+}
+.wrapper {
+    margin-bottom:60px;
+}
+.wrapper a, .wrapper span{
+    margin:0;
+}
+
+.date {
+    color: #6f6f6f;
+    font-family: "Helvetica Neue Cyr - Roman";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 29.26px;
+    letter-spacing: 0.12px;
+}
+
+.signal {
+    padding: 20px 10px;
+    box-shadow: 0 0 39px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 23%;
+    margin-bottom: 30px;
+}
+
+.signal .date,
+.signal .signal-type {
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+}
+
+.signal .date::before {
+    position: absolute;
+    left: 67px;
+    top: 24px;
+}
+
+.signal-type {
+    font-size: 20px;
+    color: #4392e9;
+    font-weight: 600;
+    font-family: "Helvetica Neue Cyr"
+}
+
+.signal button {
+    width: 200px;
+    height: 50px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+#signals-before{
+    content: "";
+    width:20px;
+    height: 20px;
+    border-radius: 100%;
+    display: block;
+    background-color: #efe513;
+    position: absolute;
+    font-size: 14px;
+    right:-15px;
+    top:-15px;
 }

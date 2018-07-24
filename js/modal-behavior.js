@@ -10,13 +10,6 @@ $(document).ready(() => {
         } else {
             $("#name").hasClass("error") ? $("#name").toggleClass("error") : console.log
         }
-        if ($("#surname").val() == "") {
-            error = 2;
-            $("#surname").val("");
-            $("#surname").hasClass("error") ? console.log : $("#surname").toggleClass("error");
-        } else {
-            $("#surname").hasClass("error") ? $("#surname").toggleClass("error") : console.log
-        }
         if ($("#tel").val() == "") {
             error = 3;
             $("#tel").val("");
@@ -61,6 +54,15 @@ $(document).ready(() => {
         $(".validate").fadeOut(300);
         setTimeout(() => {
             $(".help").fadeIn(300);
+        }, 300)
+
+    })
+
+    $("#auth").click((e) => {
+        e.preventDefault();
+        $(".reg").fadeOut(300);
+        setTimeout(() => {
+            $(".auth").fadeIn(300);
         }, 300)
 
     })
