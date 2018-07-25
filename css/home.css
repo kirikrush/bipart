@@ -28,7 +28,7 @@
     display: block;
     position: relative;
     width: 0%;
-    height: 1px;
+    height: 3px;
     background-color: #4392e9;
     border-radius: 40px;
     transition: .3s ease;
@@ -272,11 +272,63 @@ block {
     text-decoration: underline;
     display: block;
 }
+
 .wrapper {
-    margin-bottom:60px;
+    margin-bottom: 60px;
 }
-.wrapper a, .wrapper span{
-    margin:0;
+
+.wrapper a,
+.wrapper span {
+    margin: 0;
+}
+
+.blog .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px auto 0;
+    width: 65%;
+}
+
+.blog-img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.blog-post {
+    max-width: 22%;
+    margin-bottom: 0px;
+    box-shadow: 0 0 44px 2px rgba(0, 0, 0, 0.13);
+    height: 356px;
+}
+
+.blog-post button {
+    width: 180px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    transform: translateX(-50%);
+}
+
+.blog-heading {
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.date::before {
+    top: 5px;
+    margin-right: 3px;
+}
+
+.views::before {
+    top: 1px;
+    margin-right: 3px;
+}
+
+.blog {
+    background-color: transparent;
 }
 
 .date {
@@ -323,15 +375,15 @@ block {
     margin: 0 auto 10px;
 }
 
-#signals-before{
+#signals-before {
     content: "";
-    width:20px;
+    width: 20px;
     height: 20px;
     border-radius: 100%;
     display: block;
     background-color: #efe513;
     position: absolute;
     font-size: 14px;
-    right:-15px;
-    top:-15px;
+    right: -15px;
+    top: -15px;
 }

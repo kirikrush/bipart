@@ -47,14 +47,23 @@ $(document).ready((e) => {
                 break;
             case "p33":
                 break;
-            default:    
-                let newID ="#p"+$(".active-list").attr("id")[1]+(+$(".active-list").attr("id")[2]+1);
+            default:
+                let newID = "#p" + $(".active-list").attr("id")[1] + (+$(".active-list").attr("id")[2] + 1);
                 $(newID).click();
                 console.log(newID);
                 break;
         }
     })
 
+    $(".openmodal").click((e) => {
+        e.preventDefault();
+        $(".modal__row").fadeIn(300);
+        $(".paragraph-bold").eq(0).click();
+    })
+    $(".modal button").click(() => {
+        $(".modal__row").fadeOut(300);
+        $(".hidden-modal").fadeOut(300);
+    })
 
 
 })

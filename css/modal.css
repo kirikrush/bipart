@@ -90,7 +90,7 @@
     position: relative;
 }
 
-.help button {
+.help button.callback {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
@@ -104,7 +104,9 @@
     font-weight: 400;
     line-height: 29.26px;
 }
-
+.sendpas:hover{
+    cursor: pointer;
+}
 .ps a, .auth a {
     color: #4599f3;
     font-family: "Helvetica Neue Cyr";
@@ -112,7 +114,10 @@
     letter-spacing: 0.32px;
     margin-top:20px;
 }
-
+.modal button{
+    position: static;
+    transform: none;
+}
 /*windows styles */
 
 @keyframes shake {

@@ -3,14 +3,14 @@ $(document).ready(() => {
     $(".reg .submit").click((e) => {
         e.preventDefault();
         error = 0;
-        if ($("#name").val() == "") {
+        if ($("#name").val().trunc() == "") {
             error = 1;
             $("#name").val("");
             $("#name").hasClass("error") ? console.log : $("#name").toggleClass("error");
         } else {
             $("#name").hasClass("error") ? $("#name").toggleClass("error") : console.log
         }
-        if ($("#tel").val() == "") {
+        if ($("#tel").val().trunc() == "") {
             error = 3;
             $("#tel").val("");
             $("#tel").hasClass("error") ? console.log : $("#tel").toggleClass("error");
@@ -54,6 +54,7 @@ $(document).ready(() => {
         $(".validate").fadeOut(300);
         setTimeout(() => {
             $(".help").fadeIn(300);
+            $(".paragraph-bold").eq(0).click();
         }, 300)
 
     })
@@ -77,7 +78,7 @@ $(document).ready(() => {
 
     $(".validate .submit").click((e) => {
         e.preventDefault()
-        if ($("#id").val() != "") {
+        if ($("#id").val().trunc() != "") {
             $(".validate").fadeOut(300);
             setTimeout(() => {
                 $(".success").fadeIn(300);
@@ -85,5 +86,24 @@ $(document).ready(() => {
         } else {
             $("#id").toggleClass("error");
         }
+
+       
+    })
+
+
+    $(".register").click((e)=>{
+        e.preventDefault();
+        $(".auth").fadeOut(300);
+            setTimeout(() => {
+                $(".reg").fadeIn(300);
+            }, 300)
+    })
+
+    $(".sendpas").click((e)=>{
+        e.preventDefault();
+        $(".auth").fadeOut(300);
+        setTimeout(() => {
+            $(".remind").fadeIn(300);
+        }, 300)
     })
 });

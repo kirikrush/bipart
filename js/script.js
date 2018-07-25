@@ -197,12 +197,12 @@ $(document).ready(() => {
         $(".modal").fadeOut(200);
     })
 
-    $(".openmodal").click((e) => {
-        e.preventDefault();
-        $(".modal__row").fadeIn(300);
-        $(".hidden-modal").fadeIn(300);
-        $(".paragraph-bold").eq(0).click();
-    })
+        $(".openmodal").click((e) => {
+            e.preventDefault();
+            $(".modal__row").fadeIn(300);
+            $(".hidden-modal").fadeIn(300);
+            $(".paragraph-bold").eq(0).click();
+        })
 
 
     $(".paragraph-bold").click((e) => {
@@ -218,8 +218,8 @@ $(document).ready(() => {
         }
     })
 
-    $(".modal button").click(() => {
-        $(".modal__row").fadeOut(300);
-        $(".hidden-modal").fadeOut(300);
-    })
+        $(".modal button").click(() => {
+            $(".modal__row").fadeOut(300);
+            $(".hidden-modal").fadeOut(300);
+        })
 })
