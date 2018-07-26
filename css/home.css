@@ -113,8 +113,8 @@ ul .active-item::after {
 
 .user-name:before {
     content: "";
-    width: 22px;
-    height: 22px;
+    width: 23px;
+    height: 23px;
     display: inline-block;
     margin-right: 10px;
     background-image: url(../images/user.png);
@@ -520,4 +520,9 @@ label::before {
 .modal-img img{
     width: 100%;
     object-fit: contain;
+}
+
+.modal{
+    max-height: 500px;
+    min-height:400px;
 }
