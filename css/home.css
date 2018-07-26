@@ -270,7 +270,6 @@ block {
 
 .signals-modal a {
     color: #4392e9;
-    text-decoration: underline;
     display: block;
 }
 
@@ -292,7 +291,7 @@ block {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 5px auto 0;
+    margin: 20px auto 0;
     width: 61%;
 }
 
@@ -309,6 +308,7 @@ block {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 0 0 10px 0;
 }
 
 .blog-post button {
@@ -344,6 +344,10 @@ block {
     letter-spacing: 0.12px;
 }
 
+.signal .date {
+    padding-left: 18px;
+}
+
 .signals-modal,
 .knowledge-modal {
     margin-top: 70px;
@@ -366,8 +370,8 @@ block {
 
 .signal .date::before {
     position: absolute;
-    left: 67px;
-    top: 24px;
+    left: 72px;
+    top: 25px;
 }
 
 .signal-type {
@@ -405,6 +409,14 @@ block {
     line-height: 45.44px;
     letter-spacing: 0.4px;
     margin: 70px auto 20px;
+}
+
+.chatie-modal .label {
+    margin-top: 0;
+}
+
+.chatie-modal label:before {
+    margin-top: 0;
 }
 
 .chat-description {
@@ -473,6 +485,7 @@ block {
     box-shadow: 0 0 39px 4px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     border: 0px;
+    padding: 30px;
 }
 
 label {
@@ -484,11 +497,14 @@ label {
     line-height: 18.26px;
     letter-spacing: 0.14px;
     height: 0;
-    margin-left: 120px;
+    margin-left: 55px;
 }
 
 label .file {
     margin: 0;
+    letter-spacing: 0.38px;
+    line-height: 20px;
+    margin-top: 10px;
 }
 
 #p21 {
@@ -511,19 +527,20 @@ label::before {
     width: 24px;
     height: 18px;
     margin-right: 15px;
+    margin-top: 8px;
 }
 
-.course-paragraph + h1{
-    margin-top:70px;
+.course-paragraph+h1 {
+    margin-top: 70px;
 }
 
-.modal-img img{
+.modal-img img {
     width: 100%;
     object-fit: contain;
-    max-height: 300px;  
+    max-height: 300px;
 }
 
-.modal{
+.modal {
     max-height: 500px;
-    min-height:500px;
+    min-height: 500px;
 }
