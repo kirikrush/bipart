@@ -484,7 +484,7 @@ label {
     line-height: 18.26px;
     letter-spacing: 0.14px;
     height: 0;
-    margin-right: 70px;
+    margin-left: 120px;
 }
 
 label .file {
@@ -520,9 +520,10 @@ label::before {
 .modal-img img{
     width: 100%;
     object-fit: contain;
+    max-height: 300px;  
 }
 
 .modal{
     max-height: 500px;
-    min-height:400px;
+    min-height:500px;
 }
