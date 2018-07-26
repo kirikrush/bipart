@@ -215,6 +215,7 @@ ul span {
     font-weight: 900;
     line-height: 45.44px;
     margin-bottom: 10px;
+    margin-top: 0;
     letter-spacing: 0.4px;
 }
 
@@ -282,13 +283,17 @@ block {
     margin: 0;
 }
 
+.blog span {
+    font-size: 11px;
+}
+
 .blog .wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 5px auto 0;
-    width: 65%;
+    width: 61%;
 }
 
 .blog-img {
@@ -297,19 +302,18 @@ block {
 }
 
 .blog-post {
-    max-width: 22%;
-    margin-bottom: 0px;
+    max-width: 23%;
+    margin-bottom: 40px;
+    margin-top: 0;
     box-shadow: 0 0 44px 2px rgba(0, 0, 0, 0.13);
-    height: 356px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .blog-post button {
     width: 180px;
     height: 50px;
-    position: absolute;
-    left: 50%;
-    bottom: -2px;
-    transform: translateX(-50%);
 }
 
 .blog-heading {
@@ -338,6 +342,11 @@ block {
     font-weight: 400;
     line-height: 29.26px;
     letter-spacing: 0.12px;
+}
+
+.signals-modal,
+.knowledge-modal {
+    margin-top: 70px;
 }
 
 .signal {
@@ -375,8 +384,8 @@ block {
     margin: 0 auto 10px;
 }
 
-#signals-before {
-    content: "";
+#signals-before,
+#chat-before {
     width: 20px;
     height: 20px;
     border-radius: 100%;
@@ -384,6 +393,105 @@ block {
     background-color: #efe513;
     position: absolute;
     font-size: 14px;
-    right: -15px;
-    top: -15px;
+    right: -20px;
+    top: -20px;
+}
+
+.chat-modal .heading {
+    color: #323232;
+    font-family: "Helvetica Neue Cyr";
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 45.44px;
+    letter-spacing: 0.4px;
+    margin: 70px auto 20px;
+}
+
+.chat-description {
+    opacity: 0.5;
+    color: #323232;
+    font-family: "Helvetica Neue Cyr - Roman";
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.16px;
+    margin: 0 auto 50px;
+}
+
+.message {
+    margin-bottom: 60px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10PX;
+    padding: 25px 30px;
+    position: relative;
+}
+
+.message .name {}
+
+.message .name,
+.message .date {
+    display: inline-block;
+    margin: 0;
+}
+
+.message .name {
+    color: #4598f2;
+    font-family: "Helvetica Neue Cyr";
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.32px;
+}
+
+.message .date::before {
+    position: relative;
+    float: none;
+}
+
+.message-text {
+    color: #323232;
+    font-family: "Helvetica Neue Cyr - Roman";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 29.26px;
+    letter-spacing: 0.14px;
+    margin: 10px 0 0;
+}
+
+.upload-doc {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -35px;
+    color: #4598f2 !important;
+    font-family: "Helvetica Neue Cyr - Roman";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 29.26px;
+    letter-spacing: 0.12px;
+}
+
+.send textarea {
+    box-shadow: 0 0 39px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 0px;
+}
+
+label {
+    opacity: 0.5;
+    color: #323232;
+    font-family: "Helvetica Neue Cyr - Roman";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.26px;
+    letter-spacing: 0.14px;
+    height: 0;
+    margin-right: 70px;
+}
+
+label::before {
+    content: "";
+    display: block;
+    background-image: url(../images/update.png);
+    width: 24px;
+    height: 18px;
+    margin-right: 15px;
 }

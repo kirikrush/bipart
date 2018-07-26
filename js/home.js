@@ -8,6 +8,7 @@ $(document).ready((e) => {
         $("." + $(e.currentTarget).attr("id") + "-modal").toggleClass("active-modal hidden-modal");
 
 
+
     })
     $("#express").click(() => {
         navbar = document.getElementById("courselist");
@@ -23,6 +24,7 @@ $(document).ready((e) => {
             part = +$(e.currentTarget).attr("id")[2];
         $(".block-" + block).addClass("active-block");
         $(".block-" + block + " .part-" + part).addClass("active-part");
+        $(window).scrollTop(sticky);
 
 
     })

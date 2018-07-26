@@ -38,7 +38,9 @@
         <div class="container header__container">
             <div class="row header__row">
                 <div class="col-3 logo">
-                    <img src="images/logotype.png" alt="" class="logotype">
+                    <a href="index.html">
+                        <img src="images/logotype.png" alt="" class="logotype">
+                    </a>
                 </div>
                 <div class="col-6">
                     <ul class="nav">
@@ -53,9 +55,6 @@
                         </li>
                         <li class="nav__list-item">
                             <a href="#">Блог</a>
-                        </li>
-                        <li class="nav__list-item">
-                            <a href="#">Поддержка</a>
                         </li>
                     </ul>
                 </div>
@@ -77,7 +76,9 @@
                             <div id="signals-before" class="d-flex align-items-center justify-content-center">2</div>
                         </li>
                         <li id="knowledge">База знаний</li>
-                        <li id="chat">Вопрос к куратору</li>
+                        <li id="chatie" class="position-relative">Вопрос к куратору
+                            <div id="chat-before" class="d-flex align-items-center justify-content-center">1</div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -692,15 +693,40 @@
                                     <img src="images/32.png" alt=""> Итоговая картинка. Стоит отметить, что на анализ у меня ушло всего 6 минут, а вот чтобы
                                     написать всё это более подробно-почти три часа! Поэтому поддержите меня и выполните домашнее
                                     задание
-                                    <br>
-                                    <br> Домашка: По примеру моего самостоятельного технического анализа провести подобный анализ
-                                    любого графика.
-                                    <br>
-                                    <br> Открываете платформу, выбираете первый попавшийся актив(кроме крипто-валютного) и погнали!
+
+
                                 </div>
                             </div>
                         </div>
-                        <div class="homework"></div>
+                        <div class="homework part part-9">
+                            <h1 class="heading part-title">Домашнее задание</h1>
+                            <span class="part-direction">Требует проверки куратором проекта.</span>
+                            <p class="course-paragraph">По примеру моего самостоятельного технического анализа провести подобный анализ любого графика.
+                                <br>
+                                <br> Открываете платформу, выбираете первый попавшийся актив (кроме крипто-валютного) и приступаем!
+                                <br>
+                                <br> До встречи в следующем занятии!
+
+
+                            </p>
+                            <h1 class="heading part-title">Задай вопрос куратору</h1>
+                            <div class="col-w100 dialog">
+                                <div class="message upload w-100">
+                                    <span class="name">Иван Иванов</span>
+                                    <span class="date">02 июль 2018 17-30</span>
+                                    <p class="message-text">Отправляю вам на проверку домашнюю работу! Жду обратной связи</p>
+                                    <a href="" download class="upload-doc">Прикреплен файл:домашняя работа.doc</a>
+                                </div>
+                                <div class="message w-100">
+                                    <span class="name">Кирилл Кольцов</span>
+                                    <span class="date">02 июль 2018 17-30</span>
+                                    <p class="message-text">Работу принял! продолжайте свое обучение и до встречи на новых уроках.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="w-100"></div>
+
+                        </div>
                     </div>
                     <div class="block block-3">
                         <div class="part part-1">
@@ -797,7 +823,46 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="homework"></div>
+                        <div class="homework part part-3">
+                            <h1 class="heading part-title">Домашнее задание</h1>
+                            <span class="part-direction">Требует проверки куратором проекта.</span>
+                            <p class="course-paragraph">По примеру моего самостоятельного технического анализа провести подобный анализ любого графика.
+                                <br>
+                                <br> Открываете платформу, выбираете первый попавшийся актив (кроме крипто-валютного) и приступаем!
+                                <br>
+                                <br> До встречи в следующем занятии!
+
+
+                            </p>
+                            <h1 class="heading part-title">Задай вопрос куратору</h1>
+                            <div class="col-w100 dialog">
+                                <div class="message upload w-100">
+                                    <span class="name">Иван Иванов</span>
+                                    <span class="date">02 июль 2018 17-30</span>
+                                    <p class="message-text">Отправляю вам на проверку домашнюю работу! Жду обратной связи</p>
+                                    <a href="" download class="upload-doc">Прикреплен файл:домашняя работа.doc</a>
+                                </div>
+                                <div class="message w-100">
+                                    <span class="name">Кирилл Кольцов</span>
+                                    <span class="date">02 июль 2018 17-30</span>
+                                    <p class="message-text">Работу принял! продолжайте свое обучение и до встречи на новых уроках.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="w-100"></div>
+                            <form action="" class="send w-100 ">
+                                <textarea name="" id="" class="col-12 m-auto" rows="10"></textarea>
+                                <div class="buttons d-flex align-items-center justify-content-between w-100">
+                                    <button class="callback">
+                                        <span class="callback-text arrow d-flex align-items-center">Отправить</span>
+                                    </button>
+                                    <input type="file" class="d-none" id="file">
+                                    <label for="file">
+                                        <p class="file">Прикрепить файл</p>
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                     <button class="yellow callback" id="next">
                         <span class="callback-text">Следующий урок</span>
@@ -940,7 +1005,7 @@
                         <span class="date">02 июль 2018</span>
                         <span class="views">368</span>
                     </div>
-                    <div class="blog-heading text-center">Стратегия для прибыльной торговли на каждый день</div>
+                    <div class="blog-heading text-center">Стратегия для прибыльной  торговли от BIPART</div>
                     <button class="yellow callback">
                         <span class="callback-text">Подробнее</span>
                     </button>
@@ -951,7 +1016,7 @@
                         <span class="date">02 июль 2018</span>
                         <span class="views">368</span>
                     </div>
-                    <div class="blog-heading text-center">Стратегия для прибыльной торговли на каждый день</div>
+                    <div class="blog-heading text-center">Стратегия для прибыльной  торговли от BIPART</div>
                     <button class="yellow callback">
                         <span class="callback-text">Подробнее</span>
                     </button>
@@ -962,7 +1027,7 @@
                         <span class="date">02 июль 2018</span>
                         <span class="views">368</span>
                     </div>
-                    <div class="blog-heading text-center">Стратегия для прибыльной торговли на каждый день</div>
+                    <div class="blog-heading text-center">Стратегия для прибыльной  торговли от BIPART</div>
                     <button class="yellow callback">
                         <span class="callback-text">Подробнее</span>
                     </button>
@@ -973,7 +1038,7 @@
                         <span class="date">02 июль 2018</span>
                         <span class="views">368</span>
                     </div>
-                    <div class="blog-heading text-center">Стратегия для прибыльной торговли на каждый день</div>
+                    <div class="blog-heading text-center">Стратегия для прибыльной  торговли от BIPART</div>
                     <button class="yellow callback">
                         <span class="callback-text">Подробнее</span>
                     </button>
@@ -984,7 +1049,7 @@
                         <span class="date">02 июль 2018</span>
                         <span class="views">368</span>
                     </div>
-                    <div class="blog-heading text-center">Стратегия для прибыльной торговли на каждый день</div>
+                    <div class="blog-heading text-center">Стратегия для прибыльной  торговли от BIPART</div>
                     <button class="yellow callback">
                         <span class="callback-text">Подробнее</span>
                     </button>
@@ -995,7 +1060,7 @@
                         <span class="date">02 июль 2018</span>
                         <span class="views">368</span>
                     </div>
-                    <div class="blog-heading text-center">Стратегия для прибыльной торговли на каждый день</div>
+                    <div class="blog-heading text-center">Стратегия для прибыльной  торговли от BIPART</div>
                     <button class="yellow callback">
                         <span class="callback-text">Подробнее</span>
                     </button>
@@ -1006,7 +1071,7 @@
                         <span class="date">02 июль 2018</span>
                         <span class="views">368</span>
                     </div>
-                    <div class="blog-heading text-center">Стратегия для прибыльной торговли на каждый день</div>
+                    <div class="blog-heading text-center">Стратегия для прибыльной  торговли от BIPART</div>
                     <button class="yellow callback">
                         <span class="callback-text">Подробнее</span>
                     </button>
@@ -1017,14 +1082,44 @@
                         <span class="date">02 июль 2018</span>
                         <span class="views">368</span>
                     </div>
-                    <div class="blog-heading text-center">Стратегия для прибыльной торговли на каждый день</div>
+                    <div class="blog-heading text-center">Стратегия для прибыльной  торговли от BIPART</div>
                     <button class="yellow callback">
                         <span class="callback-text">Подробнее</span>
                     </button>
                 </div>
 
             </div>
-            <div class="row personal__chat hidden-modal chat-modal"> </div>
+            <div class="row personal__chat hidden-modal chat-modal">
+                <h1 class="heading text-center col-12">Задай вопрос куратору</h1>
+                <p class="chat-description text-center col-12">Чат с вашим личным наставником</p>
+                <div class="col-8 m-auto dialog">
+                    <div class="message upload col-12">
+                        <span class="name">Иван Иванов</span>
+                        <span class="date">02 июль 2018 17-30</span>
+                        <p class="message-text">Отправляю вам на проверку домашнюю работу! Жду обратной связи</p>
+                        <a href="" download class="upload-doc">Прикреплен файл:домашняя работа.doc</a>
+                    </div>
+                    <div class="message col-12">
+                        <span class="name">Кирилл Кольцов</span>
+                        <span class="date">02 июль 2018 17-30</span>
+                        <p class="message-text">Работу принял! продолжайте свое обучение и до встречи на новых уроках.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-100"></div>
+                <form action="" class="send col-8 m-auto ">
+                    <textarea name="" id="" class="col-12 m-auto" rows="10"></textarea>
+                    <div class="buttons d-flex align-items-center justify-content-between w-100">
+                        <button class="callback">
+                            <span class="callback-text arrow d-flex align-items-center">Отправить</span>
+                        </button>
+                        <input type="file" class="d-none" id="file">
+                        <label for="file">
+                            <p class="file">Прикрепить файл</p>
+                        </label>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"

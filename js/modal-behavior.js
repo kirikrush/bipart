@@ -3,14 +3,14 @@ $(document).ready(() => {
     $(".reg .submit").click((e) => {
         e.preventDefault();
         error = 0;
-        if ($("#name").val().trunc() == "") {
+        if ($("#name").val().trim() == "") {
             error = 1;
             $("#name").val("");
             $("#name").hasClass("error") ? console.log : $("#name").toggleClass("error");
         } else {
             $("#name").hasClass("error") ? $("#name").toggleClass("error") : console.log
         }
-        if ($("#tel").val().trunc() == "") {
+        if ($("#tel").val().trim() == "") {
             error = 3;
             $("#tel").val("");
             $("#tel").hasClass("error") ? console.log : $("#tel").toggleClass("error");
@@ -78,7 +78,7 @@ $(document).ready(() => {
 
     $(".validate .submit").click((e) => {
         e.preventDefault()
-        if ($("#id").val().trunc() != "") {
+        if ($("#id").val().trim() != "") {
             $(".validate").fadeOut(300);
             setTimeout(() => {
                 $(".success").fadeIn(300);
