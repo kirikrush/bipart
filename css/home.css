@@ -392,12 +392,12 @@ block {
     display: block;
     background-color: #efe513;
     position: absolute;
-    font-size: 14px;
+    font-size: 13px;
     right: -20px;
     top: -20px;
 }
 
-.chat-modal .heading {
+.chatie-modal .heading {
     color: #323232;
     font-family: "Helvetica Neue Cyr";
     font-size: 24px;
@@ -487,6 +487,23 @@ label {
     margin-right: 70px;
 }
 
+label .file {
+    margin: 0;
+}
+
+#p21 {
+    line-height: 25px;
+    margin: 0;
+}
+
+.next {
+    width: 280px;
+    height: 70px;
+    border-radius: 30px;
+    background-color: #ece213;
+    transform: none !important
+}
+
 label::before {
     content: "";
     display: block;
@@ -494,4 +511,13 @@ label::before {
     width: 24px;
     height: 18px;
     margin-right: 15px;
+}
+
+.course-paragraph + h1{
+    margin-top:70px;
+}
+
+.modal-img img{
+    width: 100%;
+    object-fit: contain;
 }

@@ -39,7 +39,7 @@ $(document).ready((e) => {
     })
 
 
-    $("#next").click(() => {
+    $(".next").click(() => {
         switch ($(".active-list").attr("id")) {
             case "p14":
                 $("#p21").click()
@@ -59,12 +59,24 @@ $(document).ready((e) => {
 
     $(".openmodal").click((e) => {
         e.preventDefault();
-        $(".modal__row").fadeIn(300);
+        $(".modal__row:not(.modal-img)").fadeIn(300);
         $(".paragraph-bold").eq(0).click();
     })
     $(".modal button").click(() => {
-        $(".modal__row").fadeOut(300);
+        $(".modal__row:not(.modal-img)").fadeOut(300);
         $(".hidden-modal").fadeOut(300);
+    })
+
+    $(".openimg button").click((e) => {
+        e.preventDefault();
+        let src = $(e.currentTarget).parent().attr("data-img");  
+        $(".modal-img").fadeIn(300);
+        $(".modal-img img").attr("src",src);
+        console.log(src);
+        $
+    })
+    $(".modal-img button").click(() => {
+        $(".modal-img").fadeOut(300);
     })
 
 
