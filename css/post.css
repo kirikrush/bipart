@@ -1,0 +1,39 @@
+.post {
+    margin: 70px auto;
+}
+
+.post-heading {
+    margin: 20px auto;
+}
+
+.post-img {
+    max-width: 100%;
+    max-height: 600px;
+    margin-bottom: 50px;
+}
+
+.post-text {
+    color: #323232;
+    font-family: "Helvetica Neue Cyr - Roman";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.16px;
+}
+
+.post button {
+    margin-top: 50px;
+}
+
+.shadow__text {
+    position: absolute;
+    opacity: 0.05;
+    color: #323232 !important;
+    font-family: "Helvetica Neue Cyr";
+    font-size: 155px !important;
+    font-weight: 900;
+    line-height: 80px;
+    text-transform: uppercase;
+    letter-spacing: 100.75px;
+    top:282px
+}
