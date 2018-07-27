@@ -1,0 +1,110 @@
+.sub-heading {
+    font-family: "Helvetica Neue Cyr";
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 0.26px;
+    line-height: 20px;
+    margin-top: 90px;
+}
+
+.norm,
+.blued {
+    display: block;
+    white-space: nowrap
+}
+
+.norm {
+    font-family: "Helvetica Neue Cyr";
+    font-weight: 900;
+    letter-spacing: 0.18px;
+    /* Text style for "бесплатное" */
+    color: #ffffff;
+    margin-left: 140px;
+    color: #323232;
+    font-size: 18px;
+    margin-top:70px;
+}
+
+.blued {
+    font-family: "Helvetica Neue Cyr";
+    font-size: 18px;
+    font-weight: 900;
+    background-color: #4494ed;
+    padding: 5px 10px;
+    color: #fff;
+    margin-left: 130px;
+    width: 80%;
+}
+
+.paragraph:not(.copyright) {
+    color: #323232;
+    font-family: "Helvetica Neue Cyr";
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.paralaxed {
+    position: absolute;
+}
+
+.dude {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.top-paralax {
+    position: relative;
+}
+
+.normal {
+    z-index: 1;
+    width:100px;
+}
+
+.back {
+    z-index: 0;
+    filter: blur(1px);
+    transform: scale(0.7);
+    width:50px;
+}
+
+.top {
+    z-index: 2;
+    filter: blur(3px);
+    transform: scale(1.6);
+    width: 150px;
+}
+
+.paralaxed:nth-child(2) {
+    top: 400px;
+    left: 180px;
+}
+
+.paralaxed:nth-child(3) {
+    top: 200px;
+    left: 450px;
+}
+
+.paralaxed:nth-child(4) {
+    top: 300px;
+    left: 250px
+}
+
+.paralaxed:nth-child(5) {
+    top: 350px;
+    left: 400px;
+}
+
+.paralaxed:nth-child(6) {
+    top: 300px;
+}
+
+.top-screen a {
+    margin-top: 70px;
+    display: block;
+}
