@@ -22,7 +22,7 @@
     margin-left: 140px;
     color: #323232;
     font-size: 18px;
-    margin-top:70px;
+    margin-top: 70px;
 }
 
 .blued {
@@ -63,48 +63,67 @@
 
 .normal {
     z-index: 1;
-    width:100px;
 }
 
 .back {
     z-index: 0;
     filter: blur(1px);
-    transform: scale(0.7);
-    width:50px;
 }
 
 .top {
     z-index: 2;
     filter: blur(3px);
-    transform: scale(1.6);
-    width: 150px;
 }
 
 .paralaxed:nth-child(2) {
-    top: 400px;
-    left: 180px;
+    top: 300px;
+    left: 100px;
+    animation: brown 20s infinite
 }
 
 .paralaxed:nth-child(3) {
-    top: 200px;
-    left: 450px;
+    top: 400px;
+    left: 300px;
+    animation: brown 20s infinite
 }
 
 .paralaxed:nth-child(4) {
     top: 300px;
-    left: 250px
+    left: 300px;
+    animation: brown 20s .5s infinite;
 }
 
 .paralaxed:nth-child(5) {
-    top: 350px;
-    left: 400px;
+    top: 200px;
+    left: 100px;
+    animation: brown 20s .7s infinite;
 }
 
 .paralaxed:nth-child(6) {
-    top: 300px;
+    top: 250px;
+    left:400px;
 }
+
+.paralaxed:nth-child(7) {
+    top: 150px;
+    left:450px;
+}
+
+
+.paralaxed:nth-child(8) {
+    top: 100px;
+    left:250px;
+}
+
+
+.paralaxed:nth-child(9) {
+    top: 350px;
+    left:450px;
+}
+
 
 .top-screen a {
     margin-top: 70px;
     display: block;
+    animation: brown 20s .53s infinite;
 }

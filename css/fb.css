@@ -1,0 +1,142 @@
+.feedbacks__row {
+    position: relative;
+}
+
+.description-fb {
+    opacity: 0.5;
+    color: #323232;
+    font-family: "Helvetica Neue Cyr - Roman";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.16px;
+    margin-top: 0px;
+}
+
+.vertical {
+    position: absolute;
+    display: block;
+    background-color: #4494ed;
+    color: #fff;
+    transform: rotate(-90deg) translateY(-50%);
+    padding: 5px 10px;
+    font-family: "Helvetica Neue Cyr";
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.9px;
+    top: 62px;
+}
+
+.heading,
+.description-fb {
+    margin-left: 60px;
+    margin-bottom: 5px;
+}
+
+.video__row {
+    margin-top: 70px;
+}
+
+.video-item {
+    border-radius: 10px;
+    max-width: 32%;
+    box-shadow: 0 0 39px 4px rgba(0, 0, 0, 0.1);
+    padding: 0 0 40px;
+}
+
+.video-item:hover .video-button {
+    bottom: 30%;
+    opacity: 1;
+}
+
+.video-item:hover .video-name {
+    opacity: 0;
+}
+
+.video-item:hover .video-comment {
+    opacity: 0
+}
+
+.video-img {
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.video-name,
+.video-comment {
+    display: block;
+    margin-left: 20px;
+    max-width: 65%;
+    opacity: 1;
+    transition: .6s ease;
+}
+
+.video-button {
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 65px;
+    position: absolute;
+    bottom: 70px;
+    opacity: 0;
+    transition: .6s ease .3s;
+}
+
+.video-name {
+    color: #6799f4;
+    font-family: "Helvetica Neue Cyr";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0.2px;
+    margin-top: 35px;
+}
+
+.video-comment {
+    opacity: 0.8;
+    color: #323232;
+    font-family: "Helvetica Neue Cyr - Roman";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.14px;
+    margin-top: 10px;
+}
+
+.modal__row {
+    display: none;
+}
+
+.youtube {
+    height: auto;
+    position: relative;
+    background-color: #fff;
+    padding: 40px 0;
+    width: 854px;
+    position: relative;
+    top: 70px;
+}
+
+.youtube button {
+    position: static;
+    display: block;
+    margin: 20px auto;
+    bottom: 40px;
+    width: 250px;
+    height: 67px;
+}
+
+.youtube .video-name,
+.youtube .video-comment {
+    margin-left: 97px;
+}
+
+.video-item .hide{
+    display: none;
+}
+
+.youtube .hide{
+    display: block;
+}
